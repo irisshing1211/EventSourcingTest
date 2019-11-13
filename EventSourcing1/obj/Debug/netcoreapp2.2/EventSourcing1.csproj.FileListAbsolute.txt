@@ -1,0 +1,11 @@
+D:\GitHub\EventSourcing1\EventSourcing1\bin\Debug\netcoreapp2.2\EventSourcing1.deps.json
+D:\GitHub\EventSourcing1\EventSourcing1\bin\Debug\netcoreapp2.2\EventSourcing1.runtimeconfig.json
+D:\GitHub\EventSourcing1\EventSourcing1\bin\Debug\netcoreapp2.2\EventSourcing1.runtimeconfig.dev.json
+D:\GitHub\EventSourcing1\EventSourcing1\bin\Debug\netcoreapp2.2\EventSourcing1.dll
+D:\GitHub\EventSourcing1\EventSourcing1\bin\Debug\netcoreapp2.2\EventSourcing1.pdb
+D:\GitHub\EventSourcing1\EventSourcing1\obj\Debug\netcoreapp2.2\EventSourcing1.csprojAssemblyReference.cache
+D:\GitHub\EventSourcing1\EventSourcing1\obj\Debug\netcoreapp2.2\EventSourcing1.csproj.CoreCompileInputs.cache
+D:\GitHub\EventSourcing1\EventSourcing1\obj\Debug\netcoreapp2.2\EventSourcing1.AssemblyInfoInputs.cache
+D:\GitHub\EventSourcing1\EventSourcing1\obj\Debug\netcoreapp2.2\EventSourcing1.AssemblyInfo.cs
+D:\GitHub\EventSourcing1\EventSourcing1\obj\Debug\netcoreapp2.2\EventSourcing1.dll
+D:\GitHub\EventSourcing1\EventSourcing1\obj\Debug\netcoreapp2.2\EventSourcing1.pdb

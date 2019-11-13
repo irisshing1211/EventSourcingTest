@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<ArrayOfInventoryCommand xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <InventoryCommand xsi:type="CreateInventoryItemCommand">
+    <Type>Create</Type>
+    <Item>
+      <Id>0</Id>
+      <Name>iPhone</Name>
+      <Category>Phone</Category>
+    </Item>
+  </InventoryCommand>
+</ArrayOfInventoryCommand>
