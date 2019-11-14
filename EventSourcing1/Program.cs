@@ -1,4 +1,5 @@
 ﻿using System;
+using EventSourcing1.Queries;
 
 namespace EventSourcing1
 {
