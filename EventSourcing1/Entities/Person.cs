@@ -1,47 +1,19 @@
-﻿using System.Collections;
-using System.Diagnostics.Contracts;
-using EventSourcing1.Events;
-using EventSourcing1.Queries;
+﻿using System;
+using System.Collections;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace EventSourcing1
 {
-    public class Person
+    public partial class Person : BaseEntity
     {
-        private string name;
-        private int age;
-        private EventBroker broker;
+        public string Name { get; set; }
 
-        public Person(EventBroker b)
-        {
-            broker = b;
-            broker.Commands += BrokerOnCommands;
-            broker.Queries += BrokerOnQueries;
-        }
+        public int Age { get; set; }
 
-        private void BrokerOnCommands(object sender, Command command)
+        public string Phone { get; set; }
+        public Person()
         {
-            if (command is ChangeAgeCommand cac && cac.Target == this)
-            {
-                if (cac.Reg) broker.AllEvents.Add(new AgeChangeEvent(this, age, cac.Age));
-                age = cac.Age;
-            }
-            else if (command is ChangeNameCommand c && c.Target == this)
-            {
-                if(c.Reg)broker.AllEvents.Add(new NameChangeEvent(this, name, c.Name));
-                name = c.Name;
-            }
-        }
-
-        private void BrokerOnQueries(object sender, Query query)
-        {
-            if (query is AgeQuery ac && ac.Target == this)
-            {
-                ac.Result = age;
-            }
-            else if (query is NameQuery q && q.Target == this)
-            {
-                q.Result = name;
-            }
         }
     }
 }

@@ -1,11 +1,10 @@
 ﻿namespace EventSourcing1.Events
 {
-    public class NameChangeEvent : Event
+    public class PhoneChangeEvent : PersonEvent
     {
-        public Person Target;
         public string Old, New;
 
-        public NameChangeEvent(Person p, string old, string newVal)
+        public PhoneChangeEvent(Person p, string old, string newVal)
         {
             Target = p;
             Old = old;
@@ -14,7 +13,7 @@
 
         public override string ToString()
         {
-            return $"Name changed from {Old} to {New}";
+            return $"Phone changed from {Old} to {New}";
         }
     }
 }

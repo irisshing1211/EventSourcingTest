@@ -2,7 +2,7 @@
 
 namespace EventSourcing1
 {
-    public class Command : EventArgs
+    public class Commands : EventArgs
     {
         public bool Reg = true;
     }

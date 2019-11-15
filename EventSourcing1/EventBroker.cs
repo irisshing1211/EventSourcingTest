@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using EventSourcing1.Command;
 using EventSourcing1.Events;
 using EventSourcing1.Queries;
 
@@ -12,12 +13,12 @@ namespace EventSourcing1
         public IList<Event> AllEvents = new List<Event>();
 
         // command, to do some action
-        public event EventHandler<Command> Commands;
+        public event EventHandler<Commands> Commands;
 
         // query
         public event EventHandler<Query> Queries;
 
-        public void Command(Command c)
+        public void Command(Commands c)
         {
             Commands?.Invoke(this, c);
         }

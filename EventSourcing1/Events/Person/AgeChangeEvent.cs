@@ -1,6 +1,6 @@
 ﻿namespace EventSourcing1.Events
 {
-    public class AgeChangeEvent : Event
+    public class AgeChangeEvent : PersonEvent
     {
         public Person Target;
         public int Old, New;

@@ -1,6 +1,6 @@
 ﻿namespace EventSourcing1.Queries
 {
-    public class NameQuery : Query
+    public class NameQuery : PersonQuery
     {
         
     }
